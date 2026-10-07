@@ -1,0 +1,42 @@
+# Language tutor MVP: FastAPI + Streamlit + LiveKit + Whistle + SQLite
+# Direct dependencies; resolve and lock on your target platform with uv.
+
+# API and configuration
+fastapi[standard]
+pydantic
+pydantic-settings
+python-dotenv
+httpx
+
+# SQLite persistence and migrations (sqlite3 is built into Python)
+SQLAlchemy>=2,<3
+alembic
+
+# Dashboard
+streamlit
+
+# Real-time voice agent and server-side room/token API
+livekit-agents
+livekit-api
+livekit-plugins-silero
+
+# Initial LLM/TTS provider choice; replace if using another provider
+livekit-plugins-openai
+
+# Whistle transcription and audio processing
+cactus-needle
+numpy
+soxr
+soundfile
+
+# Development and testing
+pytest
+pytest-asyncio
+pytest-cov
+ruff
+
+# Optional: local terminal microphone capture (not browser microphone)
+# sounddevice
+
+# Optional: only if implementing async SQLAlchemy database access
+# aiosqlite
